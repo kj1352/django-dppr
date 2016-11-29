@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Calender</h2>
+<div class="container">
+    <div class="box2">
+        <div class="display_box"></div>
+    </div>
+    <div class="box1">
+        <button>Contact us</button>
+        <h3>Details</h3>
+        <p>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dicta, error esse est expedita hic labore perferendis sint? Dolores dolorum eligendi id illum impedit iure maxime molestias nesciunt reiciendis?</li>
+        </p>
+        <p>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dicta, error esse est expedita hic labore perferendis sint? Dolores dolorum eligendi id illum impedit iure maxime molestias nesciunt reiciendis?</li>
+        </p>
+        <p>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur dicta, error esse est expedita hic labore perferendis sint? Dolores dolorum eligendi id illum impedit iure maxime molestias nesciunt reiciendis?</li>
+        </p>
+    </div>
+</div>
+
+
+<fieldset><h2>Monthly Schedule</h2></fieldset>
+<div id="contain" class="container">
+    {% for date in dates %}
+    <div class="monthly">
+        <h2>Event Name: {{ date.event_name }}</h2>
+        <h3>Event Type: {{ date.event_type }}</h3>
+        <h3>Timings: {{ date.timing }}</h3>
+        <h3>Venue: {{ date.venue }}</h3>
+        <h4>Address: {{ date.address }}</h4>
+        <button>More Info</button>
+        <hr>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

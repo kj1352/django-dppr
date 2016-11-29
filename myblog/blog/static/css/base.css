@@ -9,14 +9,12 @@ header{
     font-family: sans-serif;
 }
 
-header:hover{
-    background-color: dimgray;
-    color: aliceblue
-}
 
 nav{    
     text-align: center;
 }
+
+
 
 img{
     width: 100%;
@@ -25,6 +23,11 @@ img{
 image{
     width: 100%;
 }
+
+#image{
+    width: 200px;
+}
+
 
 button{
     border: 0px solid;
@@ -150,6 +153,23 @@ footer{
     padding: 20px;
 }
 
+.hidden{
+    display: none;
+}
+
+.monthly{
+    background-color: aliceblue;
+    width: 90%;
+    text-align: left;
+    padding: 20px;
+    overflow= auto;
+}
+
+#contain{
+    display: block;
+    height: 500px;
+    overflow: auto;
+}
 
 @media only screen and (max-width: 640px) {
     /* For mobile phones: */
@@ -185,5 +205,14 @@ footer{
     #featured_box{
         height: inherit;
         width: 80%;
+    }
+    button{
+        width:100%;
+    }
+    header{
+        padding: 0px;
+    }
+    .heading{
+        font-size: 20px;
     }
 }

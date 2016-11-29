@@ -1,13 +1,61 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    {% for post in posts %}
-        <article>
-            <h2>{{ post.title }}</h2>
-            <h5>Posted on : {{ post.published_date }}</h5>
-            <p>{{ post.text|linebreaksbr }}</p>
-            <h5>Author : {{ post.author }}</h5>
-        </article>
-    {% endfor %}
+ <main>
+       <div class="container">
+          <div class="minicontainer">
+           <div class="box1">
+               <h2>About</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia porro sint aliquam, minima officia necessitatibus deserunt vel odit. Voluptatem veniam molestiae possimus id vero. Dolor quam quas saepe nostrum, laudantium.</p>
+               <a href="/about/"><div class="button_more">Read More</div></a>
+           </div>
+
+
+           <div class="box2">
+               <h2>Events</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus a aliquam vitae accusamus, quod est earum aut. Temporibus itaque praesentium quasi, qui iure cumque debitis, molestiae odio dolorum error quia.</p>
+               <div class="button_more">Read More</div>
+           </div>
+           <div class="box2">
+               <h2>Publications</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad quibusdam quae ea magni harum aut, explicabo aliquam earum placeat vitae quod magnam sapiente inventore fuga corporis incidunt veritatis maiores? Perferendis!</p>
+               <div class="button_more">Read More</div>
+           </div>
+           <div class="box2">
+               <h2>Recent Works</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore unde ipsum, vel cum! Beatae autem at eos ipsum, consequatur. Quasi maiores saepe tenetur minima consectetur quibusdam dolorum a, officiis nisi.</p>
+               <div class="button_more">Read More</div>
+           </div>
+           </div>
+
+           <div class="popular">
+               <h2>Popular</h2>
+               <div class="display_box"></div>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At molestias sapiente ut accusamus unde temporibus quis cum, totam, qui accusantium quaerat blanditiis dolore vitae animi, reiciendis earum! Beatae sequi, ex.</p>
+               <div class="button_more">Read More</div>
+           </div>
+       </div>
+    </main>
+
+    <main>
+        <div class="sayings">
+            <h2>Sayings</h2>
+            <p id="for_flex" class="minicontainer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint adipisci voluptates necessitatibus beatae consectetur officia cumque, non vel quia delectus veritatis optio eveniet pariatur, explicabo reiciendis eligendi! Doloremque, beatae hic.</p>
+        </div>
+        <div class="featured">
+            <h2>Featured Stories</h2>
+            <div class="box2"><div id="featured_box" class="display_box"></div></div>
+            <div class="box2"><div id="featured_box" class="display_box"></div></div>
+            <div class="box2"><div id="featured_box" class="display_box"></div></div>
+            <div class="box2"><div id="featured_box" class="display_box"></div></div>
+        </div>
+        <div class="gallery">
+            <h2>Gallery</h2>
+            <div class="box2"></div>
+            <div class="box2"></div>
+            <div class="box2"></div>
+            <div class="box2"></div>
+        </div>
+    </main>
 {% endblock %}
 

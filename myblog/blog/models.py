@@ -28,3 +28,12 @@ class Shop(models.Model):
     def __str__(self):
         return self.title
 
+class Calender(models.Model):
+    event_name = models.CharField(max_length=500)
+    event_type = models.CharField(max_length=100)
+    timing = models.DateTimeField()
+    venue = models.CharField(max_length=200)
+    address = models.TextField(max_length=400)
+
+    def __str__(self):
+        return self.event_name

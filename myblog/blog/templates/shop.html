@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for shop in shops %}
+
+    <h2>{{ shop.title }}</h2>
+    <h5>by : {{ shop.author }}</h5>
+    {% if shop.img_id %}
+        <div id="image">
+            <img src="{{ shop.img_id }}" alt="" >
+        </div>
+    {% endif %}
+    <h3>{{ shop.publications }}</h3>
+    <h5>published date: {{ shop.published_date }}</h5>
+{% endfor %}
+
+{% endblock %}
+
